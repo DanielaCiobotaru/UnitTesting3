@@ -29,5 +29,6 @@ public void checkdivision() {
     public void checkmodulo() {
         Calculator calculator = new Calculator();
         double result = calculator.division(7, 5);
+        //comment
     }
 }
