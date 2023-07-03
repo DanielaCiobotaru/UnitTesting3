@@ -25,4 +25,11 @@ public class IsPositiveTest {
         boolean result = numberToCheck.isPositive(numberFromValues);
         Assertions.assertTrue(result);
     }
+    @ParameterizedTest
+    @ValueSource (doubles = {-4, -3})
+    public void checkNegativeParametrezed (double numberFromValues) {
+        IsPositive numberToCheck = new IsPositive();
+        boolean result = numberToCheck.isPositive(numberFromValues);
+        Assertions.assertTrue(result);
+    }
 }
